@@ -1,9 +1,0 @@
-.title-purple { color: var(--purple); font-size: 2.5rem; margin-top: 15px; }
-.back-link { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
-.premium-content { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0; }
-.card-preview { background: #141426; border: 1px solid var(--purple); border-radius: 15px; display: flex; align-items: center; justify-content: center; min-height: 250px; }
-.btn-lvl2 { background: var(--purple); color: #fff; width: 100%; text-align: center; font-size: 1.2rem; }
-.price-tag { margin-bottom: 15px; font-size: 1.1rem; color: var(--muted); }
-.price-tag span { color: var(--text); font-weight: bold; font-size: 1.5rem; }
-
-@media (max-width: 768px) { .premium-content { grid-template-columns: 1fr; } }
