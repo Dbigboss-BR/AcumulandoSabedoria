@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acumulando Sabedoria | Ecossistema de Aprendizado</title>
+    <link rel="icon" href="https://fav.farm/📚"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="global-style.css">
+    <style>
+        /* Estilos específicos da Home que não vão no global */
+        #bg-canvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; position: relative; z-index: 1; }
+        .hero { text-align: center; padding: 60px 0; position: relative; z-index: 1; }
+        .hero h1 span { background: linear-gradient(135deg, var(--purple) 0%, var(--green) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 28px; transition: 0.3s; display: flex; flex-direction: column; gap: 20px; }
+        .card:hover { border-color: var(--purple); transform: translateY(-5px); background: #141426; }
+        
+        .card-icon { width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+        .card-icon.g { background: var(--green-dim); color: var(--green); }
+        .card-icon.p { background: var(--purple-dim); color: var(--purple); }
+        .card-icon.o { background: var(--orange-dim); color: var(--orange); }
+    </style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<main class="container">
+    <header class="hero">
+        <h1>Acumulando<br><span>Sabedoria</span></h1>
+        <p class="subtitle">Escolha seu nível de evolução e domine novas habilidades.</p>
+    </header>
+
+    <div class="grid">
+        <article class="card">
+            <div class="card-icon g"><i class="ti ti-bolt"></i></div>
+            <div>
+                <h2 class="card-title">Método Veloz</h2>
+                <p style="font-size: 14px; color: var(--muted);">Aprenda qualquer assunto em tempo recorde.</p>
+            </div>
+            <a href="metodo-veloz/index.html" class="btn" style="background: var(--green); color: #000;">Ver Detalhes</a>
+        </article>
+
+        <article class="card" style="border-color: rgba(139, 130, 240, 0.3);">
+            <div class="card-icon p"><i class="ti ti-crown"></i></div>
+            <div>
+                <h2 class="card-title">Sabedoria Máxima</h2>
+                <p style="font-size: 14px; color: var(--muted);">O próximo nível da retenção de conteúdo.</p>
+            </div>
+            <a href="sabedoria-maxima/index.html" class="btn" style="background: var(--purple); color: #fff;">Explorar Premium</a>
+        </article>
+
+        <article class="card">
+            <div class="card-icon o"><i class="ti ti-code"></i></div>
+            <div>
+                <h2 class="card-title">Criação de Sites</h2>
+                <p style="font-size: 14px; color: var(--muted);">Do zero ao deploy com auxílio de IA.</p>
+            </div>
+            <a href="criacao-sites/index.html" class="btn" style="background: var(--orange); color: #fff;">Acessar Masterclass</a>
+        </article>
+    </div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
