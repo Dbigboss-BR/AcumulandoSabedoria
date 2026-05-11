@@ -1,8 +1,49 @@
-.badge-tech { color: var(--orange); border: 1px solid var(--orange); padding: 4px 12px; border-radius: 20px; display: inline-block; font-size: 12px; font-weight: bold; margin-bottom: 15px; }
-h1 span { color: var(--orange); }
-.grid-content { display: grid; grid-template-columns: 1.5fr 1fr; gap: 30px; margin: 40px 0; }
-.video-container { background: #1a1a24; border-radius: 15px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(240, 128, 64, 0.2); }
-.step { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 10px; margin-bottom: 10px; border-left: 3px solid var(--orange); }
+.highlight { color: var(--orange); }
+.badge-tech { color: var(--orange); border: 1px solid var(--orange); padding: 4px 12px; border-radius: 20px; display: inline-block; font-size: 12px; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; }
+
+.grid-content { 
+    display: grid; 
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 30px; 
+    margin: 40px 0; 
+}
+
+.video-container { 
+    background: #1a1a24; 
+    border-radius: 15px; 
+    aspect-ratio: 16/9; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 1px solid rgba(240, 128, 64, 0.2); 
+}
+
+.step { 
+    background: rgba(255,255,255,0.03); 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    border-left: 3px solid var(--orange); 
+    color: var(--text);
+}
+
 .step span { font-weight: bold; margin-right: 10px; opacity: 0.5; }
-.btn-buy.orange { background: var(--orange); color: white; display: block; text-align: center; font-size: 18px; }
-@media (max-width: 768px) { .grid-content { grid-template-columns: 1fr; } }
+
+.btn-buy.orange { 
+    background: var(--orange); 
+    color: white; 
+    display: block; 
+    text-align: center; 
+    font-size: 18px; 
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-buy.orange:hover { transform: translateY(-3px); filter: brightness(1.1); }
+
+@media (max-width: 768px) { 
+    .grid-content { grid-template-columns: 1fr; } 
+}
